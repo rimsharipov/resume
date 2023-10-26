@@ -1,94 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="CV, resume, tags, html, css, course" />
-    <meta
-      name="descriptoin"
-      content="Это резюме - мой первый HTML-документ в рамках курса"
-    />
-    <title>Resume Rim Sharipov</title>
-  </head>
-  <body>
-    <img src="imgs/avatar.jpg" width="190" alt="Avatar" />
 
-    <h1>Rim Sharipov</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="CV, resume, tags, html, css, course" />
+  <meta name="descriptoin" content="Это резюме - мой первый HTML-документ в рамках курса" />
+  <title>Resume Rim Sharipov</title>
+  <link rel="stylesheet" href="resume Rim.css">
+</head>
 
-    <p>This is my resume for <strong>HTML&CSS course</strong> for beginners</p>
+<body>
 
-    <p>
-      <strong><em>I`m very glad</em></strong> to start in <em>programming</em>
-    </p>
+  <div class="container">
 
-    <a href="https://vk.com/m_e_t_a_l_m_a_n" target="_blank">ВКонтакте</a>
-    |
-    <a href="https://www.instagram.com/rim.metal.man.sharipov/" target="_blank"
-      >Instagram</a>
-    |
-    <a href="https://www.youtube.com/@jinkazama-mishima405" target="_blank">Youtube</a>
+    <div class="info">
+      <img src="imgs/avatar.jpg" alt="Avatar" class="avatar" />
 
-    <h2>My hobbies</h2>
+      <div class="info-text">
+        <h1>Rim Sharipov</h1>
 
-    <ol>
-      <li>Mototrips</li>
-      <li>Motogymkhana</li>
-      <li>Acrobatic</li>
-      <li>Astronomy</li>
-    </ol>
+        <p>This is my resume for <strong>HTML&CSS course</strong> for beginners</p>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Место работы</th>
-          <th>Должность</th>
-          <th>Год</th>
-        </tr>
-      </thead>
+        <p>
+          <strong><em>I`m very glad</em></strong> to start in <em>programming</em>
+        </p>
 
-      <tbody>
-        <tr>
-          <td>"Леруа Мерлен" ЦО</td>
-          <td>Помощник руководителя отдела бухгалтерии</td>
-          <td>2013-2015</td>
-        </tr>
-        <tr>
-          <td>Маркетинговое агентство "Action"</td>
-          <td>Модератор промо-акций</td>
-          <td>2017-2019</td>
-        </tr>
-        <tr>
-          <td>ГУФССП по г. Москве</td>
-          <td>Служащий</td>
-          <td>2015 - сейчас</td>
-        </tr>
-      </tbody>
-    </table>
+        <h4>Список социальных сетей</h4>
 
-    <h2>Связаться со мной</h2>
-    <form action="/">
-      <div>
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите имя" />
+        <a href="https://vk.com/m_e_t_a_l_m_a_n" target="_blank">ВКонтакте</a>
+        |
+        <a href="https://www.instagram.com/rim.metal.man.sharipov/" target="_blank">Instagram</a>
+        |
+        <a href="https://www.youtube.com/@jinkazama-mishima405" target="_blank">Youtube</a>
+      </div>
+    </div>
+
+    <div class="card bg-pink">
+      <h2>My hobbies</h2>
+
+      <ol class="list">
+        <li>Mototrips</li>
+        <li>Motogymkhana</li>
+        <li>Acrobatic</li>
+        <li>Astronomy</li>
+      </ol>
+    </div>
+
+    <div class="card bg-green">
+      <h2>Опыт работы</h2>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Место работы</th>
+            <th>Должность</th>
+            <th>Год</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>"Леруа Мерлен" ЦО</td>
+            <td>Помощник руководителя отдела бухгалтерии</td>
+            <td>2013-2015</td>
+          </tr>
+          <tr>
+            <td>Маркетинговое агентство "Action"</td>
+            <td>Модератор промо-акций</td>
+            <td>2017-2019</td>
+          </tr>
+          <tr>
+            <td>ГУФССП по г. Москве</td>
+            <td>Служащий</td>
+            <td>2015 - сейчас</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card bg-red">
+      <h2>Мои курсы</h2>
+
+      <ul class="link-list">
+        <li>Societe Financiers</li>
+        <li>Business English</li>
+        <li>Investments</li>
+      </ul>
+    </div>
+
+
+    <form action="/" class="form" class="bg-yellow">
+      <h2>Связаться со мной</h2>
+
+      <div class="form-row">
+
+        <div class="form-group">
+          <label for="name">Ваше имя:</label>
+          <input type="text" id="name" placeholder="Введите имя" />
+        </div>
+
+        <div class="form-group">
+          <label for="Email">Ваш email:</label>
+          <input type="email" id="Email" placeholder="Введите email" />
+        </div>
       </div>
 
-      <div>
-        <label for="Email">Ваш email:</label>
-        <input type="email" id="Email" placeholder="Введите email" />
-      </div>
-
-      <div>
+      <div class="form-group">
         <label for="message">Ваше сообщение:</label>
-        <br />
-        <textarea
-          id="message"
-          cols="30"
-          rows="7"
-          placeholder="Введите сообщение..."
-        ></textarea>
+        <textarea id="message" cols="30" rows="7" placeholder="Введите сообщение..."></textarea>
       </div>
 
-      <button type="submit">Отправить данные</button>
+      <button type="submit" class="btn">Отправить данные</button>
     </form>
-  </body>
+  </div>
+</body>
+
 </html>

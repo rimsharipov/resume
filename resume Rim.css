@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  background: #ebe1e1;
+  color: #161c25;
+}
+
+a {
+  color: #1a151d;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: #09078b;
+}
+
+a:visited {
+  color: grey;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding-top: 25px;
+}
+
+.avatar {
+  width: 200px;
+  border-radius: 25px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.info {
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.info-text {
+  margin-left: 40px;
+}
+
+.info-text p {
+  font-style: italic;
+  font-weight: bold;
+  color: #7b7e77;
+  margin: 0;
+}
+
+.info-text h4 {
+  margin-bottom: 12px;
+}
+
+/*делаем адаптивную верстку, т.к. у нас скачут элементы, если ширина экрана будет ниже 1000 пикселей*/
+
+@media (max-width: 1000px) {
+  .info {
+    display: block;
+    text-align: center;
+  }
+}
+
+.card {
+  color: #0a0953;
+  border-radius: 25px;
+  padding: 10px 16px;
+  margin-bottom: 16px;
+}
+
+.card h2 {
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.bg-yellow {
+  background: #f7f3b9;
+}
+
+.bg-red {
+  background: #f3cfcf;
+}
+
+.bg-green {
+  background: #cae9b9;
+}
+
+.bg-pink {
+  background: rgb(235, 186, 193);
+}
+
+.btn {
+  background: #140d18;
+  padding: 12px 18px;
+  color: yellow;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.list {
+  padding: 0 20px;
+}
+
+.list li {
+  color: #696662;
+  margin-bottom: 10px;
+}
+
+.link-list {
+  list-style: none;
+  padding: 0;
+}
+
+.link-list li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.table {
+  width: 100%;
+}
+
+.table td {
+  padding-bottom: 10px;
+}
+
+.table td:nth-child(2) {
+  color: #86898f;
+}
+
+.table td:nth-child(3) {
+  color: #6d5b9c;
+}
+
+.form h2 {
+  text-align: center;
+}
+
+.form-row {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.form-row .form-group {
+  margin-right: 20px;
+  width: 50%;
+  /*Если мы не используем 'display: flex' в классе '.form-row', то применяем вариант ниже*/
+  /* display: inline-block; */
+  /* width: calc(50% - 20px); */
+}
+
+.form-row .form-group:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 1000px) {
+  .form-row {
+    display: block;
+  }
+
+  .form-row .form-group {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #696c72;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+  padding: 15px 0 10px;
+  outline: none;
+  font-family: inherit;
+}
